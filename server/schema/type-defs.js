@@ -1,8 +1,8 @@
 
-import { gql } from "apollo-server-express"
+/*import { gql } from "apollo-server-express"
  export const typeDefs=gql`
 type User {
-    id:ID!
+    id:ID
     name:String
     age:Int
    
@@ -20,6 +20,7 @@ type Movie {
 type Query {
     users:[User]
     movies:[Movie]!
+    user(userId:String!):User
 }
 
 input CreateUserInput {
@@ -37,8 +38,26 @@ input UpdateUserInput {
 type Mutation {
     createUser(input:CreateUserInput!):User
     deleteUser(userId:String!):String
-    updateUser(UpdateUser:UpdateUserInput):User
+    updateUser(userId:String!,updateUser:UpdateUserInput!):User
 }
 `
+*/
+
+import { gql } from "apollo-server-express"
+export const typeDefs=gql`
+type Todo{
+    id:String
+    todo:String
+}
+
+type Query {
+    getTodo:[Todo]
+}
 
 
+type Mutation {
+    AddTodo(add:String):Todo
+    DeleteTodo(id:String):String
+    UpdateTodo(id:String,update:String):Todo
+}
+`

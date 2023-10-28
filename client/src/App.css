@@ -1,0 +1,120 @@
+
+body{
+  background-color: black;
+  color:aliceblue;
+}
+
+.nav{
+  background-color: rgb(18, 18, 18);
+  padding:10px;
+  text-align: center;
+  margin: 0 ;
+}
+.UserDetails {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+  position: fixed;
+}
+
+.input{
+  color:black;
+  width: 250px;
+  height:40px ;
+  text-align: center;
+  font-size: 30px;
+  border-radius:20px
+}
+
+.button{
+  margin: 20px;
+  width: 100px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: blue;
+}
+
+.header{
+  color:white;
+}
+
+.hr{
+  outline-width: 1px;
+  outline-style: dashed;
+ 
+  
+ 
+}
+
+.text{
+  text-align: center;
+}
+
+.todoCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+  font-size: 25px;
+  background-color: rgba(227, 215, 215, 0.111);
+  border: solid;
+  border-color: darkslategrey;
+  border-radius: 10px;
+  padding: 10px;
+  
+  min-height: 50px;
+  overflow:visible;
+  position: relative;
+}
+
+.todoText{
+text-align: start;
+background-color: black;
+padding: 10px;
+margin-right: 35px;
+border-radius: 10px;
+}
+
+
+.icon{
+position: absolute;
+right: 10px;
+
+
+
+}
+
+.icon:hover{
+  background-color:rgba(255, 255, 255, 0.433);
+  border-radius: 50%;
+}
+
+.container{
+  
+ display: flex;
+ flex-direction: column;
+ 
+ align-items: center;
+
+}
+
+.btn{
+  margin: 15px;
+
+}
+.input1{
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  color:black;
+  background-color: rgb(117, 124, 124);
+  cursor: pointer;
+  
+  
+  
+}
